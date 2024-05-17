@@ -1,0 +1,174 @@
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.container {
+  max-width: 1920px;
+  padding: 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.card_container {
+  border: 2px solid #179d2e;
+  border-radius: 4px;
+  padding: 24px;
+  width: 428px;
+  box-sizing: border-box;
+}
+.icon-container {
+  text-align: right;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #181833;
+  margin-bottom: 24px;
+}
+.list {
+  padding-left: 40px;
+  margin-bottom: 24px;
+}
+
+.item {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #2d2d2d;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.link {
+  float: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #2d2d2d;
+}
+
+.blue_border {
+  border-color: #0177b8;
+}
+
+.yelow_border {
+  border-color: #f5af23;
+}
+
+.red_border {
+  border-color: #f02e2c;
+}
+.height_card {
+  height: 595px;
+}
+
+.card_relative {
+  position: relative;
+}
+.link_absolute {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    padding: 10px;
+  }
+  .card_container {
+    width: 320px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .list {
+    padding-left: 30px;
+    margin-bottom: 24px;
+  }
+
+  .item {
+    font-size: 14px;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  .link {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1479px) {
+  .container {
+    max-width: 768px;
+    padding: 16px;
+    gap: 24px;
+    flex-direction: row;
+  }
+  .card_container {
+    padding: 24px;
+    width: 330px;
+    height: 500px;
+    box-sizing: border-box;
+  }
+  .title {
+    font-size: 24px;
+  }
+
+  .item {
+    font-size: 18px;
+  }
+  .link {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .container {
+    max-width: 1480px;
+    padding: 24;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .card_container {
+    width: 428px;
+  }
+  .title {
+    font-size: 36px;
+  }
+
+  .item {
+    font-size: 24px;
+  }
+
+  .link {
+    font-size: 24px;
+  }
+  .list {
+    padding-left: 40px;
+  }
+}
